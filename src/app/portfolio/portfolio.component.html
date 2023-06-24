@@ -1,0 +1,57 @@
+<br id="portfolio">
+<br>
+<br>
+
+<h2 style="text-align: center; color: black; font-size: 70px;">PORTFOLIO</h2>
+
+<br>
+<br>
+
+<div class="image2">
+    <div class="line2"></div>
+    <div class="star2"><img src="/assets/star2.png" alt="Star2" style="color: #212A3E;"></div>
+    <div class="line2"></div>
+</div>
+
+<br>
+
+    <!-- It is still testing -->
+<!-- <div class="photo-container">
+    <img class="img center" src="/assets/1.png" alt="1">
+    <img class="img center" src="/assets/2.jpeg" alt="2">
+    <img class="img center" src="/assets/3.jpeg" alt="3">
+    <img class="img center" src="/assets/4.png" alt="4">
+    <img class="img center" src="/assets/5.jpg" alt="5">
+    <img class="img center" src="/assets/6.jpg" alt="6">
+</div> -->
+
+<!-- The popup modal -->
+<!-- <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="popupImage" src="" alt="popup">
+        <br>
+        <h1 id="caption"></h1>
+    </div>
+</div> -->
+
+<div class="photo-container">
+    <img class="img center" src="/assets/1.png" alt="1" (click)="openModal('/assets/1.png')">
+    <img class="img center" src="/assets/2.jpeg" alt="2" (click)="openModal('/assets/2.jpeg')">
+    <img class="img center" src="/assets/3.jpeg" alt="3" (click)="openModal('/assets/3.jpeg')">
+    <img class="img center" src="/assets/4.png" alt="4" (click)="openModal('/assets/4.png')">
+    <img class="img center" src="/assets/5.jpg" alt="5" (click)="openModal('/assets/5.jpg')">
+    <img class="img center" src="/assets/6.jpg" alt="6" (click)="openModal('/assets/6.jpg')">
+</div>
+
+
+<div id="myModal" class="modal" [ngClass]="{ 'active': isModalOpen }">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img id="popupImage" [src]="modalImageSrc" alt="popup">
+      <br>
+      <h1 id="caption" class="caption">{{ captions[modalImageSrc] }}</h1>
+    </div>
+</div> 
+
+  

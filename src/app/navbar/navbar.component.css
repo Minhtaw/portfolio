@@ -1,0 +1,11 @@
+.navbar{
+    background-color: #212A3E;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px; 
+}
+
+.nav a:hover{
+    color: #45a049;
+}
